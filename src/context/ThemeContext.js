@@ -6,8 +6,8 @@ export const ThemeContext = createContext()
 const ThemeContextProvider = ({ children }) => {
     const [theme, setTheme] = useState({
         isLight: false,
-        dark: { bgMain: '#1d375a', text: '#fff', },
-        light: { bgMain: '#fff', text: '#32323d' }
+        dark: { bgMain: '#0F1724', text: '#FFFF', },
+        light: { bgMain: '#f2f4f7', text: '#32323d' }
     })
     const changeTheme = () => {
         setTheme((prev) => ({ ...prev, isLight: !theme.isLight }));
